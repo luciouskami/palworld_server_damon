@@ -148,7 +148,7 @@ fn broadcast_server_restart() {
 }
 
 fn execute_commands_concurrently() {
-    let commands = vec!["save", "q"];
+    let commands = vec!["x", "q"];
     
     for command in commands {
         let _ = Command::new("bin/palworld_rcon")
