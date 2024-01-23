@@ -2,6 +2,12 @@
 
 ## Only Support Windows
 
+Why:
+
+Because the Server has memory leak issues right now,so we need restart the server before the memory overflow
+
+
+
 config.toml example:
 
 ```toml
