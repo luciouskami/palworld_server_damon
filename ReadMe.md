@@ -6,8 +6,6 @@ Why:
 
 Because the Server has memory leak issues right now,so we need to restart the server before memory overflow
 
-
-
 config.toml example:
 
 ```toml
