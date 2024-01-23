@@ -4,7 +4,7 @@
 
 Why:
 
-Because the Server has memory leak issues right now,so we need restart the server before the memory overflow
+Because the Server has memory leak issues right now,so we need to restart the server before the memory overflow
 
 
 
