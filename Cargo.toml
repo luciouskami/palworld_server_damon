@@ -1,0 +1,13 @@
+[package]
+name = "palworld_dedicated_server_damon"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ctrlc = "3.1.9"
+winapi = { version = "0.3.9", features = ["psapi", "sysinfoapi", "handleapi", "processthreadsapi"] }
+encoding_rs = "0.8.28"
+toml = "0"
+serde = { version = "1.0", features = ["derive"] }
