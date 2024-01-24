@@ -8,6 +8,8 @@ use winapi::um::sysinfoapi::GlobalMemoryStatusEx;
 use winapi::um::sysinfoapi::MEMORYSTATUSEX;
 use winapi::um::winnt::{PROCESS_QUERY_INFORMATION, PROCESS_VM_READ};
 
+use sys_info::mem_info;
+
 use serde::Deserialize;
 use std::fs;
 use std::process::{Command, Stdio};
@@ -126,6 +128,13 @@ fn get_available_memory() -> Option<u64> {
             println!("Available memory: {} MB", available_memory_mb);
             return Some(available_memory_mb as u64);
         }
+    }
+    None
+}
+
+fn _get_available_memory2() -> Option<u64> {
+    if let Ok(usage) = mem_info() {
+        return Some(usage.free / 1024);
     }
     None
 }
